@@ -17,41 +17,44 @@ body>*{
 }
 
 
-.dimensioni-carta{
+.carta{
     float:left;
-    width: 20%;
-    height: 200px;
+    width: 160px;
+    height: 220px;
     border-radius: 10px;
     margin: 1%;
 }
 
-.dimensioni-carta:not(:hover){
+.carta:not(:hover){
     background-image: url(../img/pattern.png);
     background-attachment: scroll;
     background-size: contain;
 }
 
-.dimensioni-carta:hover{
+.carta:hover{
     background-image: none;
     background-color: white;
     display: inline-block;
 }
 
-.dimensioni-carta:not(hover) .contenuto{
+.carta:not(hover) .contenuto{
     display: none
 }
 
-.dimensioni-carta:hover .contenuto{
+.carta:hover .contenuto{
     float: left;
     display: inline-block;
     color: red;
     text-align: center;
-
-
-
 }
 
 .dim-img{
     width: 100%;
-    padding-top: 15px;
+    padding-top: 10px;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
