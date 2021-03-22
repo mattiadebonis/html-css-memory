@@ -12,26 +12,46 @@ body{
 
 body>*{
     margin-left: 20%;
-    margin-right: 15%
+    margin-right: 15%;
+
 }
 
 
-.carta {
+.dimensioni-carta{
     float:left;
     width: 20%;
-    height: 250px;
-    background-size: contain;
+    height: 200px;
     border-radius: 10px;
     margin: 1%;
 }
 
-.carta:not(:hover){
+.dimensioni-carta:not(:hover){
     background-image: url(../img/pattern.png);
+    background-attachment: scroll;
+    background-size: contain;
 }
 
-.carta:hover{
-    background-image: url(../img/noun_air_balloon_3134741.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.dimensioni-carta:hover{
+    background-image: none;
+    background-color: white;
+    display: inline-block;
+}
+
+.dimensioni-carta:not(hover) .contenuto{
+    display: none
+}
+
+.dimensioni-carta:hover .contenuto{
+    float: left;
+    display: inline-block;
+    color: red;
+    text-align: center;
+
+
+
+}
+
+.dim-img{
+    width: 100%;
+    padding-top: 15px;
 }
